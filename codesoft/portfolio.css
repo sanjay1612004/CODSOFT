@@ -1,0 +1,340 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: white;
+    background-color: #000000;
+    /* background-color:linear-gradient(black,blue) ; */
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-image: linear-gradient(#000000,#923CB5);
+}
+.heading{
+    color:yellow;
+    font-size: xx-large;
+    padding-left: 10px;
+}
+.menu{
+    padding: 0.5rem;
+}
+.menu .menulist{
+    display: flex;
+    list-style: none ;
+
+}
+.menu .mli{
+    padding: 0.5rem 1rem;
+}
+.link{
+    color:gold;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+   
+
+}
+a:hover{
+    color: red;
+}
+/* ---home---- */
+.home{
+    padding-top: 60px;
+    background-image: url(imgs/myphoto1.png);
+    
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    padding-left: 50px;
+    margin-right: 50px;
+    background-size: 500px ;
+    background-position: right;
+    background-color: transparent;
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: start;
+    margin: 4.8 rem 0;
+}
+
+.mh{
+    color: red;
+    font-weight: bolder;
+}
+.btnc{
+    font-size: larger;
+    font-weight: bolder;
+    background-color:brown;
+    color:white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+    border-color: #4538ff;
+}
+.btng{
+    font-size: larger;
+    font-weight: bolder;
+    background-color:orangered;
+    color:white;
+    border-radius: 10px;
+    position: relative;
+    left:15px;
+    box-shadow: 2px 2px 2px;
+    border-color: yellow;
+}
+.btnc:hover{
+    background-color:blue;
+}
+.btng:hover{
+    background-color: gold;
+}
+/* ---about-- */
+.box{
+    height:450px;
+    width:400px;
+    border-radius: 50%;
+    background-color:white;
+    background-image: url(imgs/myphoto1.png);
+    background-position: center;
+    border:5px solid yellow;
+    box-shadow: 2px 2px 2px;
+}
+
+
+.about{
+    padding-left:80px;
+    display: flex;
+    
+}
+.container{
+    padding-left: 160px;
+    flex-wrap: wrap;
+}
+.typed{
+    overflow: hidden;
+    white-space: nowrap;
+    width:0;
+    animation: typing 5s steps(30,end) infinite;
+    
+
+    animation-fill-mode: forwards;
+}
+@keyframes typing{
+    from{width:0}
+    to{width:100%}
+}
+.typed{
+    font-weight: bolder;
+}
+#ty{
+    color:yellow;
+    overflow: hidden;
+    white-space: nowrap;
+    width:0;
+    animation: typing 5s steps(30,end) infinite;
+    animation-fill-mode: forwards;
+}
+.abt{
+    color: grey;
+    cursor: pointer;
+    animation: glow 0.5s ease infinite;
+}
+@keyframes glow{
+    from{
+        color:grey;
+    }
+    to{
+        color:white;
+        text-shadow:
+        0 0 5px #a9ff38
+        0 0 25px #c038ff
+        0 0 50px #5513d1
+        0 0 100px #4538ff;
+    }
+}
+.hr{
+    text-shadow: 2px 2px 2px;
+    color: yellow;
+}
+/* ------services--- ---*/
+.holder{
+    display: flex;
+    
+    
+}
+.serviceh{
+    font-weight: boldest;
+    text-shadow:2px 2px 2px gold ;
+    color: gold;
+    margin-left: 35%;
+    font-size: 60px;
+    
+}
+
+
+.sbox1{
+    height: 250px;
+    width:350px;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    color: white;
+    font-weight: bold;
+    background-color:#262626 ;
+    border-radius: 10px;
+    
+    
+}
+.sbox2{
+
+    height: 250px;
+    width:350px;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    color: white;
+    font-weight: bold;
+    background-color:#262626;
+    border-radius: 10px;
+}
+.sbox3{
+    height: 250px;
+    width:350px;
+    background-color: #262626;
+    border: 2px solid black;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+
+} 
+.sbox1:hover{
+    background: red;
+    transform: translateY(-10px);
+}
+.sbox2:hover{
+    background: red;
+    transform: translateY(-10px);
+}
+.sbox3:hover{
+    background: red;
+    transform: translateY(-10px);
+}
+.ah:hover{
+    color: yellow;
+}
+.holder i{
+    font-size: 30px;
+}
+
+/* ------portfolio------ */
+.holder2{
+    display: flex;
+}
+
+.b1{
+    height: 300px;
+    width: 350px;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 30px;
+    border-radius: 10px;
+    background-image: url(imgs/webdev.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.b2{
+    height: 300px;
+    width: 350px;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 30px;
+    border-radius: 10px;
+    background-image: url(imgs/appdev.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.b3{
+    height: 300px;
+    width: 350px;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 30px;
+    border-radius: 10px;
+    background-image: url(imgs/unidev.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.b1:hover{
+    transform: scale(1.1);
+}
+.b2:hover{
+    transform: scale(1.1);
+}
+.b3:hover{
+    transform: scale(1.1);
+}
+.seem{
+    font-size: larger;
+    margin-left: 500px;
+    position: relative;
+    top: 20px;
+    font-weight: 100px;
+    background-color: transparent;
+    color: white;
+    border-width: 0;
+ 
+}
+.seem:hover{
+    background-color: red;
+}
+.holder3 .row{
+    display: flex;
+}
+.contact-right .forms input{
+    position: relative;
+    height: 30px;
+    left:200px;
+    top:25px;
+   width: 200%;
+   background-color: #262626;
+   color:#fff;
+}
+#email{
+    position: relative;
+    top:15px;
+}
+.contact-right .forms textarea{
+    position: relative;
+    left:200px;
+    top:50px;
+   width: 200%;
+   height: 100px;
+   background-color: #262626;
+   color: white;
+}
+.contact-right .forms .sumbit{
+    position: relative;
+    left:300px;
+    top:55px;
+   width: 100px;
+   height: 25px;
+   background-color: red;
+   font-weight: bolder;
+   color: #fff;
+
+}
+.contact-left{
+    padding-left: 50px;
+}
